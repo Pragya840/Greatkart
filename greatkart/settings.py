@@ -9,10 +9,10 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-# import os
+import os
 from pathlib import Path
 from django.contrib.messages import constants as messages
-# import django_heroku
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -27,7 +27,7 @@ SECRET_KEY = 'qj@ksi@&r0cr=uhj*fl9tjpu1i1rrh3iryok)9ij+o7n52rj58'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -150,5 +150,5 @@ EMAIL_HOST_USER = 'pragyathakur7654@gmail.com'
 EMAIL_HOST_PASSWORD = 'chika@#00'
 EMAIL_USE_TLS = True
 
-# # Activate Django-Heroku.
-# django_heroku.settings(locals())
+# Activate Django-Heroku.
+django_heroku.settings(locals())
