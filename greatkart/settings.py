@@ -27,7 +27,7 @@ SECRET_KEY = 'qj@ksi@&r0cr=uhj*fl9tjpu1i1rrh3iryok)9ij+o7n52rj58'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['greatkart840.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -132,7 +132,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     'greatkart/static',
 ]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # media files configuration
 MEDIA_URL = '/media/'
